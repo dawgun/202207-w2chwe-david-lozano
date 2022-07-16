@@ -1,4 +1,4 @@
-import gridGenerator from "./gridGenerator";
+import gridGenerator from "./gridGenerator.js";
 
 describe("Given the gridGenerator function", () => {
   describe("When it's called and it recieves 2 and 2", () => {
