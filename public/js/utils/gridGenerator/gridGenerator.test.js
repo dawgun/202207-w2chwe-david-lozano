@@ -6,8 +6,14 @@ describe("Given the gridGenerator function", () => {
       const firstNumber = 2;
       const secondNumber = 2;
       const expectedReturn = [
-        [false, false],
-        [false, false],
+        [
+          { position: "column0 row0", life: false },
+          { position: "column0 row1", life: false },
+        ],
+        [
+          { position: "column1 row0", life: false },
+          { position: "column1 row1", life: false },
+        ],
       ];
 
       const gridBoard = gridGenerator(firstNumber, secondNumber);
