@@ -1,10 +1,12 @@
 const cellStateChanger = (cellPosition, livingCells) => {
-  if (cellPosition.life === true && (livingCells < 2 || livingCells > 3))
-    cellPosition.life = false;
-  if (cellPosition.life === false && livingCells === 3)
-    cellPosition.life = true;
+  const cellMutated = { ...cellPosition };
 
-  return cellPosition;
+  if (cellPosition.life === true && (livingCells < 2 || livingCells > 3))
+    cellMutated.life = false;
+
+  if (cellPosition.life === false && livingCells === 3) cellMutated.life = true;
+
+  return cellMutated;
 };
 
 export default cellStateChanger;

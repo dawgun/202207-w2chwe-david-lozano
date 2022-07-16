@@ -15,5 +15,6 @@ module.exports = {
       "always",
       { exceptAfterSingleLine: true },
     ],
+    "import/extensions": ["error", { js: "always" }],
   },
 };
