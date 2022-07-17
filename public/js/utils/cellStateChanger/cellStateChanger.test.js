@@ -1,6 +1,6 @@
 import cellStateChanger from "./cellStateChanger.js";
 
-describe("Given an object of Game of Life", () => {
+describe("Given the function cellStateChanger", () => {
   describe("When it's called and it recieves the object { position: 'column0 row1', life: false } and 2", () => {
     test("Then it should mutate the object to { position: 'column0 row1', life: true }", () => {
       const firstValue = { position: "column0 row1", life: false };
