@@ -1,6 +1,6 @@
 import lifeChecker from "./lifeChecker.js";
 
-describe("Given the an array of arrays", () => {
+describe("Given the function lifeCheker", () => {
   describe("When it's called and it recieves an object of Game of Life, value 1 and value 1", () => {
     test("Then it should return 3", () => {
       const firstValue = [
