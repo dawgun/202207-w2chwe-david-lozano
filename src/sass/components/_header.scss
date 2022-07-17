@@ -1,0 +1,13 @@
+.title-game {
+  height: 7rem;
+  background-color: black;
+  display: flex;
+  padding-left: 2rem;
+  align-items: center;
+
+  > h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+}
