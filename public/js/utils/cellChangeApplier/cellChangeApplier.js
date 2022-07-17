@@ -1,8 +1,8 @@
 const cellChangeApplier = (gameBoard, cellMutated) => {
   let cellChanged;
 
-  gameBoard.forEach((gridColumn) => {
-    gridColumn.find((cellPosition) => {
+  gameBoard.forEach((gameColumn) => {
+    gameColumn.find((cellPosition) => {
       if (cellPosition.position === cellMutated.position) {
         cellPosition.life = cellMutated.life;
         cellChanged = cellPosition;
