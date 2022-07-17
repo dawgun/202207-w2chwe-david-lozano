@@ -1,4 +1,4 @@
-import cellStateChanger from "./cellStateChanger.js";
+import cellStateChangeSaver from "./cellStateChangeSaver.js";
 
 describe("Given the function cellStateChanger", () => {
   describe("When it's called and it recieves the object { position: 'column0 row1', life: false } and 2", () => {
@@ -7,7 +7,7 @@ describe("Given the function cellStateChanger", () => {
       const secondValue = 3;
       const expectedMutation = { position: "column0 row1", life: true };
 
-      const cellState = cellStateChanger(firstValue, secondValue);
+      const cellState = cellStateChangeSaver(firstValue, secondValue);
 
       expect(cellState).toEqual(expectedMutation);
     });
@@ -18,7 +18,7 @@ describe("Given the function cellStateChanger", () => {
       const secondValue = 1;
       const expectedMutation = { position: "column0 row1", life: false };
 
-      const cellState = cellStateChanger(firstValue, secondValue);
+      const cellState = cellStateChangeSaver(firstValue, secondValue);
 
       expect(cellState).toEqual(expectedMutation);
     });

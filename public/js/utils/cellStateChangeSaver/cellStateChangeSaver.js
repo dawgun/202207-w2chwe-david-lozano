@@ -1,4 +1,4 @@
-const cellStateChanger = (cellPosition, livingCells) => {
+const cellStateChangeSaver = (cellPosition, livingCells) => {
   const cellMutated = { ...cellPosition };
 
   if (cellPosition.life === true && (livingCells < 2 || livingCells > 3)) {
@@ -13,4 +13,4 @@ const cellStateChanger = (cellPosition, livingCells) => {
   return undefined;
 };
 
-export default cellStateChanger;
+export default cellStateChangeSaver;
