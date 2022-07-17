@@ -1,0 +1,26 @@
+.game-of-life {
+  padding-left: 2rem;
+  background-color: black;
+  width: 100vw;
+
+  .game-container {
+    max-width: 800px;
+    height: 800px;
+    display: flex;
+  }
+
+  .game-of-life__column {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .game-of-life__pixel {
+    border: 1px solid gray;
+    flex: 1;
+  }
+
+  .hidden-pixel {
+    border-style: none;
+  }
+}
