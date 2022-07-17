@@ -6,7 +6,7 @@ const cellListChangeApplier = (gameBoard, cellMutatedList) => {
 
   cellMutatedList.forEach((cellMutated) => {
     cellChanged = cellChangeApplier(gameBoard, cellMutated);
-    cellListChangeApplier.push(cellChanged);
+    cellListChanged.push(cellChanged);
   });
 
   return cellListChanged;
