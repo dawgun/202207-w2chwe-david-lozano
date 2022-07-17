@@ -1,0 +1,20 @@
+.game-buttons {
+  height: 7rem;
+  background-color: black;
+  border-top: 1px solid gray;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .green-button {
+    width: 12rem;
+    height: 3rem;
+    border-radius: 20px;
+    font-family: "Atomic Age", cursive;
+    font-size: 2rem;
+    color: #39ff14;
+    border-color: #39ff14;
+    background-color: inherit;
+  }
+}
