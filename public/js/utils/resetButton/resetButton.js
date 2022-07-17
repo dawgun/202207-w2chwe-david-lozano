@@ -1,7 +1,7 @@
 const resetButton = (gameBoard) => {
-  const resetButton = document.querySelector(".game-buttons__button-reset");
+  const resetButtonHtml = document.querySelector(".game-buttons__button-reset");
 
-  resetButton.addEventListener("click", () => {
+  resetButtonHtml.addEventListener("click", () => {
     const htmlGrid = document.querySelectorAll(".game-of-life__pixel");
 
     htmlGrid.forEach((pixel) => {
