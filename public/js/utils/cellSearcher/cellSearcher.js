@@ -1,4 +1,4 @@
-import cellStateChangeSaver from "../cellStateChanger/cellStateChangeSaver.js";
+import cellStateChangeSaver from "../cellStateChangeSaver/cellStateChangeSaver.js";
 import lifeChecker from "../lifeChecker/lifeChecker.js";
 
 const cellSearcher = (gridGame) => {
@@ -6,8 +6,8 @@ const cellSearcher = (gridGame) => {
   let cellLivingCounter;
   let cellMutated;
 
-  for (let column = 1; column < 4; column += 1) {
-    for (let row = 1; row < 4; row += 1) {
+  for (let column = 1; column < gridGame.length - 1; column += 1) {
+    for (let row = 1; row < gridGame[column].length - 1; row += 1) {
       cellLivingCounter = lifeChecker(gridGame, column, row);
       cellMutated = cellStateChangeSaver(
         gridGame[column][row],
