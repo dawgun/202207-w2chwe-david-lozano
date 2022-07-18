@@ -1,12 +1,18 @@
+@use "../variables/colors";
+
 .game-of-life {
   padding-left: 2rem;
-  background-color: black;
+  background-color: colors.$background-color;
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  min-width: 800px;
 
   .game-container {
     max-width: 800px;
     height: 800px;
     display: flex;
+    flex: 1;
   }
 
   .game-of-life__column {

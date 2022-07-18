@@ -1,7 +1,9 @@
+@use "../variables/colors";
+
 .name-creator {
-  background-color: black;
+  background-color: colors.$background-color;
   height: 4rem;
-  color: #39ff14;
+  color: colors.$primary-color;
   font-size: 1.5rem;
   display: flex;
   justify-content: center;
