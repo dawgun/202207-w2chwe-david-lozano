@@ -1,12 +1,16 @@
+@use "../variables/colors";
+
 .title-game {
   height: 7rem;
-  background-color: black;
+  background-color: colors.$background-color;
   display: flex;
   padding-left: 2rem;
   align-items: center;
+  border-bottom: 1px solid gray;
+  justify-content: center;
 
   > h1 {
-    color: white;
+    color: colors.$primary-color;
     font-size: 3rem;
     font-weight: 700;
   }

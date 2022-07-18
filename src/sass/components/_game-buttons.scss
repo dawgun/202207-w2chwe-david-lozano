@@ -1,6 +1,8 @@
+@use "../variables/colors";
+
 .game-buttons {
   height: 7rem;
-  background-color: black;
+  background-color: colors.$background-color;
   border-top: 1px solid gray;
   display: flex;
   align-content: center;
@@ -13,8 +15,8 @@
     border-radius: 20px;
     font-family: "Atomic Age", cursive;
     font-size: 2rem;
-    color: #39ff14;
-    border-color: #39ff14;
+    color: colors.$primary-color;
+    border-color: colors.$primary-color;
     background-color: inherit;
   }
 }
